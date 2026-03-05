@@ -1,0 +1,3 @@
+use mongoose_orm;
+
+db.users.insert({name: "Alice", age: 30}) <- add some dummy data, to make the db...
