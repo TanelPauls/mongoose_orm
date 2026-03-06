@@ -45,7 +45,7 @@ router.delete('/comment/:id', async (req, res) => {
     await Comment.findByIdAndDelete(id)
     const data = await Comment.find();
     //res.send(data);
-    res.status(200).json({message: "Comment deleted."})
+    res.status(200).json({message: "Comment deleted."});
   }
   catch(error){
     res.status(500).json({message: error})

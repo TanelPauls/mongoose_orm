@@ -6,7 +6,7 @@ import stringsController from "./controllers/strings.js";
 import toodeController from "./controllers/products.js";
 import articleController from "./controllers/articles.js";
 import commentController from "./controllers/comments.js";
-
+import authorController from "./controllers/author.js";
 
 
 dotenv.config();
@@ -29,6 +29,7 @@ app.use('/', stringsController);
 app.use('/', toodeController);
 app.use('/', articleController);
 app.use('/', commentController);
+app.use('/', authorController);
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`App is started at http://localhost:${PORT}`);

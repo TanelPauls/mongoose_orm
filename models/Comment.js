@@ -14,6 +14,10 @@ const comment = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Article',
     required: true
+  },
+  author: {
+    required: true,
+    type: mongoose.Schema.Types.ObjectId, ref: 'Author'
   }
 })
 
